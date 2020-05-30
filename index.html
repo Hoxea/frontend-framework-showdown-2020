@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Vanilla JS Image search</title>
+	</head>
+	<body>
+		<h1>Image Search</h1>
+
+		<form>
+			<label for="searchTerm">Search Term</label>
+			<input
+				class="u-full-width"
+				type="text"
+				id="searchTerm"
+				name="searchTerm"
+			/>
+			<button type="submit">Search</button>
+		</form>
+
+		<img id="loadingImage" src="https://i.imgur.com/LVHmLnb.gif" />
+		<section class="images">
+			<!-- images loaded dynamically here -->
+		</section>
+
+		<script type="module" src="index.js"></script>
+	</body>
+</html>
